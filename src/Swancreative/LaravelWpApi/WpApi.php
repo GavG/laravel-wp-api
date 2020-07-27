@@ -46,7 +46,7 @@ class WpApi
      */
     public function posts($page = null)
     {
-        return $this->get('posts', ['page' => $page]);
+        return $this->get('posts', ['page' => $page, '_embed' => 1]);
     }
     /**
      * Get all sticky posts
